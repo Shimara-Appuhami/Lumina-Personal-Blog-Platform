@@ -1,46 +1,51 @@
-Personal Blog Platform – Lumina
+# Lumina — Personal Blog Platform
 
-Lumina is a full-stack MERN personal blog platform built for storytellers. Authors can publish rich posts with cover images, readers can explore and engage through likes and threaded comments, and administrators benefit from a clean separation between client and server code.
+Lumina is a full‑stack MERN personal blog platform built for storytellers. Authors can publish rich posts with cover images, readers can explore and engage through likes and threaded comments, and admins have role-aware controls. The project focuses on a polished writing experience, audience engagement, and simple deployment.
 
-🚀 Highlights
+---
 
-Modern authoring experience
-Rich text editing with React Quill, autosized cover uploads, tag management, and optimistic updates powered by React Query.
+## 🚀 Highlights
 
-Audience engagement
-Like tracking, threaded comments with replies, and a notification dropdown that marks activity as read.
+- Modern authoring experience: rich text editing with React Quill, tag management, cover uploads, and optimistic UI updates via React Query.
+- Audience engagement: likes, threaded comments with replies, and a notification dropdown marking activity as read.
+- Profiles and avatars: public profile pages, editable bios, and avatar uploads (local storage by default; optional Cloudinary integration).
+- Secure access: JWT authentication, protected routes, and role-aware UI for editing posts or profiles.
+- Polished interface: Tailwind-inspired UI, glassmorphism cards, responsive design, and smooth loading states.
 
-Profiles and avatars
-Public profile pages, editable bios, and avatar uploads (local storage by default; optional Cloudinary integration available).
+---
 
-Secure access
-JWT authentication, protected routes, and role-aware UI for editing posts or profiles.
+## 🧰 Tech Stack
 
-Polished interface
-Tailwind-inspired UI, glassmorphism cards, responsive design, and smooth loading states.
+| Layer     | Technologies |
+|-----------|--------------|
+| Frontend  | React 18, Vite, React Router 6, React Hook Form, @tanstack/react-query, Axios |
+| Styling   | Tailwind CSS (utility classes), custom CSS, Headless UI patterns |
+| Backend   | Node.js, Express.js, MongoDB, Mongoose |
+| Auth      | JSON Web Tokens (JWT), bcrypt |
+| Uploads   | Multer (in-memory), image storage in server/uploads (or Cloudinary) |
 
-🧰 Tech Stack
-Layer	Technologies
-Frontend	React 18, Vite, React Router 6, React Hook Form, @tanstack/react-query, Axios
-Styling	Tailwind CSS (utility classes), custom CSS, Headless UI patterns
-Backend	Node.js, Express.js, MongoDB, Mongoose
-Auth	JSON Web Tokens (JWT), bcrypt
-Uploads	Multer (in-memory), image storage in server/uploads
-⚙️ Getting Started
-Prerequisites
+---
 
-Node.js 18+
+## ⚙️ Prerequisites
 
-npm or yarn
+- Node.js 18+ and npm (or yarn)
+- MongoDB (local instance or MongoDB Atlas)
+- Optional: Cloudinary account (if using cloud image storage)
 
-MongoDB (local or Atlas)
+---
 
-Optional: Cloudinary account (if using cloud image storage)
+## Getting Started
 
-1. Clone and Install
-git clone <repo-url>
-cd "Personal Blog Platform"
+1. Clone the repo and change into the project directory:
 
+```bash
+git clone https://github.com/Shimara-Appuhami/Lumina-Personal-Blog-Platform.git
+cd Lumina-Personal-Blog-Platform
+```
+
+2. Install dependencies
+
+```bash
 # Install backend dependencies
 cd server
 npm install
@@ -48,45 +53,88 @@ npm install
 # Install frontend dependencies
 cd ../client
 npm install
+```
 
-2. Configure Environment Variables
+3. Configure environment variables
 
-Create your .env file:
+Copy the example env and edit values:
 
+```bash
 cp .env.example .env
+```
 
-Environment Variables
-Variable	Purpose
-PORT	Express server port (default: 5000)
-MONGO_URI	MongoDB connection string
-JWT_SECRET	Secret key for JWT signing
-JWT_EXPIRES_IN	Token lifetime (e.g., 7d)
-CLIENT_URL	Vite dev URL (http://localhost:5173)
-SERVER_URL	API origin for serving uploaded files
+Then open `.env` and set the appropriate values.
 
-Note: Uploaded images are stored locally under server/uploads by default.
+Environment variables used:
 
-3. Run in Development
+| Variable      | Purpose |
+|---------------|---------|
+| PORT          | Express server port (default: 5000) |
+| MONGO_URI     | MongoDB connection string |
+| JWT_SECRET    | Secret key for JWT signing |
+| JWT_EXPIRES_IN| Token lifetime (e.g., 7d) |
+| CLIENT_URL    | Vite dev URL (e.g., http://localhost:5173) |
+| SERVER_URL    | API origin for serving uploaded files (e.g., http://localhost:5000) |
+| CLOUDINARY_URL (optional) | Cloudinary connection string if using cloud uploads |
 
-Use two terminals:
+Note: Uploaded images are stored locally under `server/uploads` by default. If you wish to use Cloudinary, configure `CLOUDINARY_URL` and enable Cloudinary integration in the server config.
+
+4. Run in development
+
+Use two terminals (one for backend, one for frontend):
 
 Backend
+
+```bash
 cd server
 npm run dev
+```
 
-
-Runs at:
-http://localhost:5000
+Backend default: http://localhost:5000
 
 Frontend
+
+```bash
 cd client
 npm run dev
+```
 
+Frontend default: http://localhost:5173
 
-Runs at:
-http://localhost:5173
+---
 
-🛠 Helpful Scripts
-Location	Command	Description
-server	npm run dev	Start Express server with nodemon
-client	npm run dev	Start Vite development server
+## 🛠 Helpful Scripts
+
+- server: `npm run dev` — Start Express server with nodemon (dev)
+- server: `npm start` — Start compiled server (production)
+- client: `npm run dev` — Start Vite development server
+- client: `npm run build` — Build frontend for production
+- client: `npm run preview` — Preview production build locally
+
+(Exact script names and behaviors are defined in each package.json inside `/server` and `/client`.)
+
+---
+
+## Deployment notes
+
+- For production, set NODE_ENV=production, build the client, and serve static files from the server (or host the client separately).
+- Make sure `MONGO_URI`, `JWT_SECRET`, and `SERVER_URL` are set in your production environment.
+- If using Cloudinary, replace local upload handling with Cloudinary upload logic and ensure `CLOUDINARY_URL` is configured.
+
+---
+
+## Contributing
+
+Contributions are welcome. Please open an issue to propose breaking changes or submit a pull request for smaller fixes/features. Follow the code style used in the repository and include tests where appropriate.
+
+---
+
+## License
+
+Specify your license here (e.g., MIT). If none, add one or create a LICENSE file.
+
+---
+
+## Contact
+
+Project maintained by Shimara-Appuhami. For questions or help, open an issue on the repository.

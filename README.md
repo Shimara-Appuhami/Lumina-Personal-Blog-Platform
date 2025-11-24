@@ -75,7 +75,6 @@ Environment variables used:
 | JWT_EXPIRES_IN| Token lifetime (e.g., 7d) |
 | CLIENT_URL    | Vite dev URL (e.g., http://localhost:5173) |
 | SERVER_URL    | API origin for serving uploaded files (e.g., http://localhost:5000) |
-| CLOUDINARY_URL (optional) | Cloudinary connection string if using cloud uploads |
 
 Note: Uploaded images are stored locally under `server/uploads` by default. If you wish to use Cloudinary, configure `CLOUDINARY_URL` and enable Cloudinary integration in the server config.
 
@@ -106,14 +105,13 @@ Frontend default: http://localhost:5173
 ## 🛠 Helpful Scripts
 
 - server: `npm run dev` — Start Express server with nodemon (dev)
-- server: `npm start` — Start compiled server (production)
 - client: `npm run dev` — Start Vite development server
-- client: `npm run build` — Build frontend for production
-- client: `npm run preview` — Preview production build locally
+
 
 (Exact script names and behaviors are defined in each package.json inside `/server` and `/client`.)
 
 ---
+
 
 
 

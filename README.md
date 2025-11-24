@@ -119,7 +119,6 @@ Frontend default: http://localhost:5173
 
 - For production, set NODE_ENV=production, build the client, and serve static files from the server (or host the client separately).
 - Make sure `MONGO_URI`, `JWT_SECRET`, and `SERVER_URL` are set in your production environment.
-- If using Cloudinary, replace local upload handling with Cloudinary upload logic and ensure `CLOUDINARY_URL` is configured.
 
 ---
 
@@ -127,14 +126,4 @@ Frontend default: http://localhost:5173
 
 Contributions are welcome. Please open an issue to propose breaking changes or submit a pull request for smaller fixes/features. Follow the code style used in the repository and include tests where appropriate.
 
----
 
-## License
-
-Specify your license here (e.g., MIT). If none, add one or create a LICENSE file.
-
----
-
-## Contact
-
-Project maintained by Shimara-Appuhami. For questions or help, open an issue on the repository.

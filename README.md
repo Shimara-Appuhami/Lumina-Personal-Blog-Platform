@@ -18,19 +18,18 @@ Lumina is a full‑stack MERN personal blog platform built for storytellers. Aut
 
 | Layer     | Technologies |
 |-----------|--------------|
-| Frontend  | React 18, Vite, React Router 6, React Hook Form, @tanstack/react-query, Axios |
+| Frontend  | React   , Vite, React Router 6, React Hook Form, @tanstack/react-query, Axios |
 | Styling   | Tailwind CSS (utility classes), custom CSS, Headless UI patterns |
 | Backend   | Node.js, Express.js, MongoDB, Mongoose |
 | Auth      | JSON Web Tokens (JWT), bcrypt |
-| Uploads   | Multer (in-memory), image storage in server/uploads (or Cloudinary) |
+| Uploads   | Multer (in-memory), image storage in server/uploads              |
 
 ---
 
 ## ⚙️ Prerequisites
 
-- Node.js 18+ and npm (or yarn)
-- MongoDB (local instance or MongoDB Atlas)
-- Optional: Cloudinary account (if using cloud image storage)
+- Node.js 18+ and npm 
+- MongoDB 
 
 ---
 
@@ -133,4 +132,5 @@ Frontend default: http://localhost:5173
 <img width="1902" height="958" alt="comment" src="https://github.com/user-attachments/assets/c19defc3-a8ec-4241-9224-bab1615941af" />
 
 <img width="1901" height="873" alt="notification" src="https://github.com/user-attachments/assets/e324013a-b43b-44dc-b8ad-d070e16f7cc0" />
+
 

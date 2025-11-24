@@ -115,15 +115,5 @@ Frontend default: http://localhost:5173
 
 ---
 
-## Deployment notes
-
-- For production, set NODE_ENV=production, build the client, and serve static files from the server (or host the client separately).
-- Make sure `MONGO_URI`, `JWT_SECRET`, and `SERVER_URL` are set in your production environment.
-
----
-
-## Contributing
-
-Contributions are welcome. Please open an issue to propose breaking changes or submit a pull request for smaller fixes/features. Follow the code style used in the repository and include tests where appropriate.
 
 

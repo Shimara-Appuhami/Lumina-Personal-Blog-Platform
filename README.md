@@ -75,7 +75,7 @@ Environment variables used:
 | CLIENT_URL    | Vite dev URL (e.g., http://localhost:5173) |
 | SERVER_URL    | API origin for serving uploaded files (e.g., http://localhost:5000) |
 
-Note: Uploaded images are stored locally under `server/uploads` by default. If you wish to use Cloudinary, configure `CLOUDINARY_URL` and enable Cloudinary integration in the server config.
+Note: Uploaded images are stored locally under `server/uploads` by default. 
 
 4. Run in development
 
@@ -132,5 +132,6 @@ Frontend default: http://localhost:5173
 <img width="1902" height="958" alt="comment" src="https://github.com/user-attachments/assets/c19defc3-a8ec-4241-9224-bab1615941af" />
 
 <img width="1901" height="873" alt="notification" src="https://github.com/user-attachments/assets/e324013a-b43b-44dc-b8ad-d070e16f7cc0" />
+
 
 

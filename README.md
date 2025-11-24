@@ -112,6 +112,25 @@ Frontend default: http://localhost:5173
 
 ---
 
+<img width="1918" height="964" alt="signin" src="https://github.com/user-attachments/assets/c659fbde-2b54-4872-86db-6e1b31e4a682" />
 
+<img width="1898" height="957" alt="signup" src="https://github.com/user-attachments/assets/b0003cb9-9615-4880-86ab-baa1dfa61c7f" />
 
+<img width="1902" height="890" alt="home-page-" src="https://github.com/user-attachments/assets/378d84c0-9804-4dae-ba17-cb39b899fc5c" />
+
+<img width="1912" height="962" alt="home-page-card" src="https://github.com/user-attachments/assets/1e8c4756-1d35-43ce-95d4-df5ca4a28a7e" />
+
+<img width="1894" height="961" alt="profile" src="https://github.com/user-attachments/assets/24a6415d-6395-4ec3-a494-1daa26ae26db" />
+
+<img width="1919" height="958" alt="edit-profile" src="https://github.com/user-attachments/assets/3388fac7-656e-4705-9930-bc03bace3ace" />
+
+<img width="1900" height="955" alt="cards" src="https://github.com/user-attachments/assets/1747a024-dccd-4cf0-b56b-466c9e5b8c9f" />
+
+<img width="1900" height="955" alt="cards" src="https://github.com/user-attachments/assets/48f114cd-75af-499f-9873-345ccbaa4c6a" />
+
+<img width="1888" height="947" alt="edit-post" src="https://github.com/user-attachments/assets/ef6c644e-e702-4731-b8a8-2781a40e45e7" />
+
+<img width="1902" height="958" alt="comment" src="https://github.com/user-attachments/assets/c19defc3-a8ec-4241-9224-bab1615941af" />
+
+<img width="1901" height="873" alt="notification" src="https://github.com/user-attachments/assets/e324013a-b43b-44dc-b8ad-d070e16f7cc0" />
 

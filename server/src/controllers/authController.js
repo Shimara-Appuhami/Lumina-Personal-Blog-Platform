@@ -11,6 +11,7 @@ export const register = async (req, res) => {
 
   const { username, email, password, avatar } = req.body;
   const { user, token } = await registerUser({ username, email, password, avatar });
+  console.log(`[Auth] Issued access token for ${user.email}: ${token}`);
 
   res.status(201).json({
     success: true,
@@ -30,6 +31,7 @@ export const login = async (req, res) => {
 
   const { email, password } = req.body;
   const { user, token } = await loginUser({ email, password });
+  console.log(`[Auth] Issued access token for ${user.email}: ${token}`);
 
   res.json({
     success: true,
